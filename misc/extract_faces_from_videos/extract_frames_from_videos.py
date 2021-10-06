@@ -1,5 +1,5 @@
 import cv2
-
+import face_recognition as fr
 def extract_frames(video_path, output_folder, save_every=10):
     """
     Extract frames from a video with given interval
@@ -26,6 +26,8 @@ def extract_frames(video_path, output_folder, save_every=10):
     output_general_name = output_folder + "/" + file_name + "_frame"
     while success:
         if count % save_every == 0:
+            face_locations = fr.face_locations(image)
+            image = image[ face_locations[0][0]:face_locations[0][2], face_locations[0][3]:face_locations[0][1], :]
             cv2.imwrite(output_general_name + "_{}.jpg".format(count), image)     # save frame as JPEG file      
         success,image = vidcap.read()
         print('Read a new frame: ', success)
