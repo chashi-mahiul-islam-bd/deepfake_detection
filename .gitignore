@@ -1,3 +1,3 @@
-*.mp4
-*.jpg
+deepfake_detection/data/*.mp4
+deepfake_detection/data/*.jpg
 .spyproject/*
