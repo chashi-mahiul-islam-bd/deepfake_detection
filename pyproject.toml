@@ -6,6 +6,7 @@ authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+opencv-python = "^4.5.3"
 
 [tool.poetry.dev-dependencies]
 spyder = "^5.1.5"
