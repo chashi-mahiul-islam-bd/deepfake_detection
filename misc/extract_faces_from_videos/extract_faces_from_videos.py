@@ -1,6 +1,6 @@
 import cv2
 import face_recognition as fr
-def extract_frames(video_path, output_folder, save_every=10):
+def extract_faces(video_path, output_folder, save_every=10):
     """
     Extract frames from a video with given interval
 
@@ -34,4 +34,4 @@ def extract_frames(video_path, output_folder, save_every=10):
         count += 1
 
 if __name__ == "__main__":
-    extract_frames("data/000_003.mp4", "data/frames")
+    extract_faces("data/000_003.mp4", "data/frames")
