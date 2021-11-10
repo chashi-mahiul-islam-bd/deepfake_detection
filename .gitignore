@@ -1,3 +1,4 @@
-deepfake_detection/data/*.mp4
-deepfake_detection/data/*.jpg
+deepfake_detection/data/
+deepfake_detection/data/
 .spyproject/*
+deepfake_detection/trained_models/*.pkl
